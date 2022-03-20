@@ -38,6 +38,7 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.childCheckBox = new System.Windows.Forms.CheckBox();
             this.stallRadioButton = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +90,7 @@
             this.chkDiscount.TabIndex = 5;
             this.chkDiscount.Text = "Senior / Student";
             this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscount.CheckedChanged += new System.EventHandler(this.chkDiscount_CheckedChanged);
             // 
             // radBalcony
             // 
@@ -151,6 +153,17 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // childCheckBox
+            // 
+            this.childCheckBox.AutoSize = true;
+            this.childCheckBox.Location = new System.Drawing.Point(329, 115);
+            this.childCheckBox.Name = "childCheckBox";
+            this.childCheckBox.Size = new System.Drawing.Size(61, 21);
+            this.childCheckBox.TabIndex = 11;
+            this.childCheckBox.Text = "Child";
+            this.childCheckBox.UseVisualStyleBackColor = true;
+            this.childCheckBox.CheckedChanged += new System.EventHandler(this.childCheckBox_CheckedChanged);
+            // 
             // stallRadioButton
             // 
             this.stallRadioButton.AutoSize = true;
@@ -168,6 +181,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 548);
+            this.Controls.Add(this.childCheckBox);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -198,6 +212,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.CheckBox childCheckBox;
         private System.Windows.Forms.RadioButton stallRadioButton;
     }
 }
